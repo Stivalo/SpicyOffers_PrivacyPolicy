@@ -15,7 +15,7 @@
         /* ✅ HEADER SECTION */
         .header {
             position: relative;
-            width: 100%;
+            width: 100%;             /* عدلنا العرض ليصير 100% */
             height: 200px;
             background-image: url('Header PNG.PNG'); /* اسم الصورة العريضة */
             background-size: cover;
@@ -26,7 +26,12 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            height: 60px;
+            height: 100px;            /* كبرنا اللوغو من 60px إلى 100px */
+            width: auto;
+            border-radius: 12px;      /* اضفنا حواف دائرية خفيفة للوجو */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            background-color: white;  /* خلفية بيضاء للوجو عشان يظهر بشكل أفضل */
+            padding: 5px;
         }
 
         /* ✅ MAIN CONTENT */
@@ -49,10 +54,12 @@
             border-radius: 8px;
             font-size: 18px;
             transition: 0.3s;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
 
         .button:hover {
             background-color: #0056b3;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -60,7 +67,7 @@
 
     <!-- ✅ HEADER SECTION -->
     <div class="header">
-        <img src="Logo JPG.JPG" alt="Logo" class="logo">
+        <img src="Logo PNG.png" alt="Logo" class="logo">
     </div>
 
     <!-- ✅ MAIN CONTENT -->
