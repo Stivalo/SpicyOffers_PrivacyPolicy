@@ -20,7 +20,7 @@
 
     .header img.header-image {
       width: 100%;
-      height: 50%;
+      height: auto;
       display: block;
     }
 
@@ -30,7 +30,10 @@
       left: 20px;
       height: 120px;
       width: auto;
-      /* أزلنا الخلفية، البادينغ، البوردر، والظل */
+      padding: 5px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
     /* ✅ MAIN CONTENT */
@@ -39,12 +42,12 @@
     }
 
     h1 {
-      color: #689353;
+      color: #759a62;
       margin-bottom: 20px;
     }
 
     h3 {
-      color: #444;
+      color: #ae6e15;
       margin-bottom: 40px;
     }
 
@@ -55,7 +58,7 @@
       background-color: #ae6e15;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 16px;
       font-size: 18px;
       transition: 0.3s;
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);
@@ -69,10 +72,10 @@
 </head>
 <body>
 
-  <!-- ✅ HEADER SECTION with clean transparent logo -->
+  <!-- ✅ HEADER SECTION with PNG image and logo overlay -->
   <div class="header">
-    <img src="header.png" alt="Header Image" class="header-image">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="Header PNG.png" alt="Header Image" class="header-image">
+    <img src="Logo PNG.png" alt="Logo" class="logo">
   </div>
 
   <!-- ✅ MAIN CONTENT -->
@@ -82,3 +85,6 @@
     <a class="button" href="SO_Privacy_Policy.pdf" target="_blank">Privacy Policy</a>
     <a class="button" href="SO_Terms_and_Conditions.pdf" target="_blank">Terms and Conditions</a>
   </div>
+
+</body>
+</html>
